@@ -15,10 +15,10 @@ jobs:
         with:
           node-version: '20'
           registry-url: 'https://registry.npmjs.org'
-      - uses: actions/setup-pnpm@v4
+      - uses: pnpm/action-setup@v5
         with:
           version: 10
-          node-version: '20'
+          cache: true
       - run: pnpm install
       - run: pnpm build
       - run: npm publish
