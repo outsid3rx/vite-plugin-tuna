@@ -9,5 +9,6 @@ jobs:
         with:
           node-version: '20'
           cache: 'pnpm'
+          corepack: true
       - run: pnpm install
       - run: pnpm lint:fix
