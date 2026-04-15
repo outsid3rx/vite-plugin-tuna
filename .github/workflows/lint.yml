@@ -8,7 +8,9 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
-          cache: 'pnpm'
-          corepack: true
+      - uses: actions/setup-pnpm@v4
+        with:
+          version: 10
+          node-version: '20'
       - run: pnpm install
       - run: pnpm lint:fix
