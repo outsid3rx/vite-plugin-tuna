@@ -15,9 +15,7 @@ jobs:
         with:
           node-version: '20'
           registry-url: 'https://registry.npmjs.org'
-      - name: Update npm
-        run: npm install -g npm@latest
-      - run: ./scripts/set-version.sh ${{ github.event.release.tag_name }}
-      - run: pnpm i
+          cache: 'pnpm'
+      - run: pnpm install
       - run: pnpm build
       - run: npm publish
