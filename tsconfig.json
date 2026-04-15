@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "bundler",
+    "removeComments": true,
+    "skipLibCheck": true,
+    "strict": true
+  }
+}

@@ -1,0 +1,9 @@
+node_modules
+.idea
+src
+logs
+.github
+tsdown.config.ts
+.gitignore
+.eslintrc.cjs
+.prettierrc
